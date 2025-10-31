@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSAP | Control Animation</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main id="main-container">
+        <div class="box">
+            <h1>GSAP</h1>
+        </div>
+        <div class="control_btn">
+            <!-- SVG Filter for Glass Distortion -->
+            <svg style="display: none">
+                <filter id="glass-distortion">
+                    <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
+                </filter>
+            </svg>
+
+            <button id="play" class="glass-button">
+                <div class="glass-filter"></div>
+                <div class="glass-overlay"></div>
+                <div class="glass-specular"></div>
+                <div class="glass-content">
+                    <span>Play</span>
+                </div>
+            </button>
+            <!-- SVG Filter for Glass Distortion -->
+            <svg style="display: none">
+                <filter id="glass-distortion">
+                    <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
+                </filter>
+            </svg>
+
+            <button id="pause" class="glass-button">
+                <div class="glass-filter"></div>
+                <div class="glass-overlay"></div>
+                <div class="glass-specular"></div>
+                <div class="glass-content">
+                    <span>Pause</span>
+                </div>
+            </button>
+            <!-- SVG Filter for Glass Distortion -->
+            <svg style="display: none">
+                <filter id="glass-distortion">
+                    <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
+                </filter>
+            </svg>
+
+            <button id="resume" class="glass-button">
+                <div class="glass-filter"></div>
+                <div class="glass-overlay"></div>
+                <div class="glass-specular"></div>
+                <div class="glass-content">
+                    <span>Resume</span>
+                </div>
+            </button>
+            <!-- SVG Filter for Glass Distortion -->
+            <svg style="display: none">
+                <filter id="glass-distortion">
+                    <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
+                </filter>
+            </svg>
+
+            <button id="reverse" class="glass-button">
+                <div class="glass-filter"></div>
+                <div class="glass-overlay"></div>
+                <div class="glass-specular"></div>
+                <div class="glass-content">
+                    <span>Reverse</span>
+                </div>
+            </button>
+            <!-- SVG Filter for Glass Distortion -->
+            <svg style="display: none">
+                <filter id="glass-distortion">
+                    <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
+                </filter>
+            </svg>
+
+            <button id="restart" class="glass-button">
+                <div class="glass-filter"></div>
+                <div class="glass-overlay"></div>
+                <div class="glass-specular"></div>
+                <div class="glass-content">
+                    <span>Restart</span>
+                </div>
+            </button>
+    </main>
+    <!-- link the gsap cdn link here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- link js file -->
+    <script src="main.js"></script>
+</body>
+
+</html>
